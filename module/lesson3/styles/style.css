@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-size: 10px;
+}
+/* HEADER START */
+header {
+    background-color: crimson;
+    color: white;
+    width: 100%;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.list {
+    display: inline-block;
+}
+
+.item {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0 40px;
+
+}
+/* a tegi ozidan bowqa bironta parent elementdan inherit yani meros omidi */
+
+.link {
+    color: white;
+    text-decoration: none !important;
+    /* !important idnyam yutb chiqadi */
+    /* agar important bomasa inline usul yutadi hammasini */
+}
+
+#link {
+    text-decoration: underline;
+}
+
+/* HEADER END */
+/* live preview расширения */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 50px 30px 50px  80px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 4px dashed orange;
+    /* padding: 50px 20px 30px 0;  */
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 10px 10px 0 0 black,
+    15px 15px 0px red,
+    25px 25px 10px blue;
+    ;
+    /* birinxhisi x oqi boyicha
+    ikkinchisi y
+    uchinchisi shaffofligi soya
+    tortinchisi spread radius toest tarqalish radiusi
+    */
+    /* display: block; */
+    /* inlinelada w h iwlamidi, agar uni blokka aylantirse iwlidi */
+    /* display: inline-block; */
+    /* inlinedan yonidigi elementga joy bowatb berw xususiyatini oldi, blokdan w h qabul qildi */
+    /* bulani iwlatmimiz bundan yaxwi usulla bor, lekin bulani bza blwmz kere */
+    display: block;
+    float: left;
+    /* float yonidan joy bowatb beradi  */
+}
+
+/* rangberiw usuli:
+HEX, RGB -> RED 255, GREEN 255, BLUE 255
+#008000 , rgb(255,255,255), rgba(255,0,25, 0dan 1 gacha) shaffofli
+piksel ekrandigi bitta nuqta hisoblanadi (figmada korsatw)
+retina ekranlada bosa bitta px ichida 4ta px joylawadi wunga sifati kuchli boladi i kopro hajm egallidi
+*/
+
+.wrapper {
+    width: 100%;
+    height: 50vh;
+    border: 2px solid black;
+    margin-top: 30px;
+    /*parentidaheightbosaiwlidifoizlisi*/;
+}
+
+/* viewport width vw
+sayti bizaga kornb turgan qismi viewport 
+viewport height vh
+vh height iwlavuradi otasini balandligi bomasayam
+rem bu 16px toest 1rem=16px, otasiga qaramidi
+em bu bodyga fs-10px berse qoganga bosa 2em berse bu dgani 2em=20px, otasiga qaridi
+*/
+
+.card  {
+    width: 240px;
+    height: auto;
+    box-shadow: 0 0 15px silver;
+    float: left;
+    margin: 40px;
+    padding-bottom: 12px;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card-body button {
+    float: right;
+    /* floatga display blok boliwi wartmas
+    float minusiyam bor padding yevoradi, togrlavorw kere
+    */
+    padding: 6px 10px;
+    background-color: rgb(80, 180, 220);
+    color: white;
+}
