@@ -13,3 +13,11 @@ SEMANTIC HTML5 TAGS:
 - selectors
 - level selectors
 - inline , internal, external
+
+- property
+
+- bgc
+- color
+- w
+- h
+- text-align

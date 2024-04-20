@@ -1,0 +1,33 @@
+/* .text-title {
+    text-align: center;
+    color: green;
+    font-family: sans-serif;
+
+} */
+
+.card {
+    width: 300px;
+    height: 500px;
+    background: rgb(180, 232, 239);
+    /* inspect ochib chuntrw */
+    border: solid 1px green;
+    /* kontent bp hisobiga kotta bop ketadi */
+    margin-left: 100px;
+    /* padding: 20px; */
+    /* margin bizaga tawqaridan masofa ochberadi
+    margin soat yonalishi boyicha: tepa ong pas chap */
+    /* 100px 40px 20px - 40px ozini qarwisidigiga boladi- qarama qarwisi bilan brxl */
+    /* padding borderdan ichkariga qarab sanidi */
+    box-sizing: content-box;
+    box-sizing: border-box;
+    margin: 100px auto;
+    /* ortaga qoyiw */
+}
+/* box model pbm */
+
+
+.card-body{
+    padding: 12px;
+    background-color: #f5c4c4;
+}
+/* figmani skachat qiliw */
