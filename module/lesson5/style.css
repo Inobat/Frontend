@@ -2,7 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* asosiy kop iwlatilgan font shotga yozib qoyiladi */
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* bu dgani birinchi topilmasa ikkinchi font , uyam toplmasa keyngisi, wuningdek agar wrift nomi bitta bosa qowtrnoqga omasdan yozsayam boladi */
+    /* internetdan link qilinsa global oliw hsoblanadi, internet ochib qosa wriftla iwlami qoladi */
+
 }
+
+/* fonspace.com yaxwi sayt fontlaga */
+/* lokaniy ulash */
+@font-face {
+    font-family: "DripOctober";
+    /* ozimiz wrift nomlimz */
+    src: url(./assets/fonts/drip-october-font/DripOctober-vm0JA.ttf);
+    /* woff2,otf format ttfga qaraganda tezro yuklanadi , uwa bosa iwlatgan yaxwi, konvert qb ogirsayam yaxwi */
+}
+
+
+
+/*  
+font-family: "Merriweather", serif;
+font-family: "Jacquard 24", system-ui;
+font-family: "Jersey 25", sans-serif;
+
+san-seriflaga qirrasi yoq wriftla kiradi
+serifda qirrasi bor
+
+*/
 
 header {
     background-color: pink;
@@ -26,7 +53,8 @@ header {
     font-size: 24px;
     color: white;
     text-decoration: none;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: "Jacquard 24", system-ui;
 }
 
 .nav>.nav__list {
@@ -62,5 +90,10 @@ header {
 .nav>.nav__list>.nav__list--item>.nav__list--item-link {
     color: white;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Merriweather", serif;
+}
+
+
+h3 {
+    font-family: "DripOctober";
 }
