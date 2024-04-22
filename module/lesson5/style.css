@@ -96,4 +96,51 @@ header {
 
 h3 {
     font-family: "DripOctober";
+    margin-top: 300px;
+}
+
+.wrapper {
+    border: 2px solid blue;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: all 4s ease;
+    /* transform: translateX(100px); */
+
+}
+
+.card:hover {
+    /* transform: rotate(90deg); */
+    /* rotate(+-?deg) o'giriladi qayiladi */
+    /* transform: translate(100px, 300px); */
+    /* tX bu ongga yuradi
+    t(-X) bu chapga yuradi 
+    tY bu pasga tuwadi
+    t(-Y) bu tepaga kotariladi
+    translate elemntimizzi kochirib beradi
+    translate (x, y) shorthand
+    */
+
+    /* transform: scale(2, 3); */
+    /* scale ? barobar kotta qiberadi px yozilmidi ,faqat son 1, 1.5 i tak dalye */
+    /* scale(x, y) */
+
+
+    /* transform: skew(-20deg, 0deg); */
+    /* skew(10deg, 20deg) bosa 10 deg orqaga elementimiz qulab tuwvotti, 20deg ewi chapdan ochilvotti*/
+    /* skew(-10deg, -20deg) bosa -10 deg oldinga elementimiz qulab tuwvotti, -20deg ewi ongdan ochilvotti*/
+    /* skew 3d format наклон элемента*/
+
+    transform: skew(50deg, 0) rotate(10deg) translate(100px, 200px) scale(1.5, 1.5);
+    /* hammasini bittada iwlatsayam b0ladi */
+
+
 }
