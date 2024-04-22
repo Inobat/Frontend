@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    background-color: indianred;
+    margin: 100px auto;
+    transition-property: background-color, border-radius;
+    /*transition-property: all;
+    bu hamma hususiyatga*/
+    /*qaysi xususiyatti seknlawtrw*/
+    transition-duration: 1s;
+    /*seknli sekundi*/
+    transition-delay: 0s;
+    /*nechi sekunddan keyin bowlaniwi*/
+    transition-timing-function: ease;
+    /*ozgariw holatining harakat grafigi,inspect orqali koriwmz i ozgartiriwimiz mumkun znacheniyalari kop,korib cqwkere*/
+
+    /* transition: 2s all 1s ease;  delay, property, time, func */
+    /* transition: all 1s ease;  kopincha delay yozlmidi, property, time, func */
+
+}
+
+.box:hover {
+    /*sichqonchamizzioborganda*/
+    background: green;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    /* width: 200px;
+    height: 200px; */
+}
+
+.box:active {
+    /* sichqoncha bn bosb turgan holatimiz */
+    background-color: pink;
+}
+
+input {
+    display: block;
+    width: 400px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+input:focus {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: green;
+}
+
+input::placeholder {
+    color: red;
+}
+
+a {
+    display: block;
+    font-size: 40px;
+    margin-left: 300px;
+}
+
+a:visited {
+    color: red;
+}
+
+/* psevdo klasla: hover, active, focus, visited, nth*/
+/* transition  br elementni ikkinchi holatga otiwini seknlawtrb berw, element oziga yoziladi*/
+/* psevdo elementla: ::before, ::after, ::selection,  ::placeholder, ::content */
