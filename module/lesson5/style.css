@@ -4,6 +4,44 @@
     box-sizing: border-box;
 }
 
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title::after {
+    content: "frontend";
+    color: blue;
+    width: 120px;
+    height: 100px;
+    background-color: bisque;
+    display: block;
+}
+
+.title::before {
+    content: "backend";
+    color: pink;
+}
+
+.title::first-letter {
+    font-size: 50px;
+    color: red;
+}
+
+.text::first-line {
+    color: blue;
+}
+
+.text::selection {
+    /* background-color: burlywood; */
+    /* выделение текста */
+    user-select: none;
+    /* Защита текста на сайте от копирования */
+}
+
+
+
+
 .box {
     width: 500px;
     height: 300px;
@@ -77,4 +115,5 @@ a:visited {
 
 /* psevdo klasla: hover, active, focus, visited, nth*/
 /* transition  br elementni ikkinchi holatga otiwini seknlawtrb berw, element oziga yoziladi*/
-/* psevdo elementla: ::before, ::after, ::selection,  ::placeholder, ::content */
+/* psevdo elementla: ::before, ::after, ::selection,  ::placeholder, ::content, ::first-letter, ::first-line */
+/* after, beforela inline element boladi bowida */
