@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+picture {
+    display: none;
+}
+
+.box-wrapper {
+    margin: 10px;
+    height: auto;
+    /* responsive bovotganda kengayb ketvuradi wunga auto ili min-heght bergan yaxwi */
+    background-color: bisque;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    /* row bu qator default holati
+    row-rewerse bu qator ong tarafiga otib teskari qoyberadi 6-1
+    column ustun holati 1-6
+    column-reverse boxslani teskari qoyberadi 6-1
+    */
+    /* gorizontal oqda qanaqa joylashishini aniqlaberwmz kere justify-content */
+    /* justify-content: space-between; */
+    /*  flex chiroyli layout qberadi)
+    center hammma elementlarimiz markazda
+    flex-end ohiridan joylawtrb beradi qator ohiriga raqab
+    flex-start default qator bowiga
+    space-around hamma element ong chap tarafiga br xl masofa ajratb beradi, wu hisobiga bowida va ohirida kamro masofa boladi
+    space-between ikta tomondan (ong chap) joy tawamidi qoganlani bolib beradi
+    space-evenly hamma masofani teng bolib beradi
+    */
+    align-items: flex-start;
+    /* 
+    vertikal yonaliw
+    stretch ozini parentini toldirib turiw agar height aniq bolmasa
+    center y oqi boyicha ortaga oberadi
+    flex-end y oqi boyicha pasga
+    flex-start y oqi boyicha tepaga
+    */
+    flex-wrap: wrap;
+    /* agar boxlarimiz kop bolib konteynerga sigmi qosa:
+    flex-wrap:wrap sigmi qogan elemntlani pasga tuwurb beradi, pasga tuwgan qismini justify-contentga kora taqsmlanadi
+    */
+    /* column-gap: 50px; */
+    /* ustunlar orasidigi masofa bu column-gap blokla/boxsla orasidigi masofa
+     (задаёт отступ между колонками.)x*/
+    /* row-gap: 200px; */
+    /* qator orasidigi masofa row-gap задаёт отступ между рядами.  y*/
+    gap: 40px 40px;
+    /* short hand gap x, y  inspectda tekwrb korsa boladi, qator va ustun orasidigi masofa*/
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    margin: 4px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box:nth-child(19){
+    background-color: dodgerblue;
+    order: -1;
+}
+/* nth-child(odd) toqlari
+nth-child(even) juftlari
+first-child birinchisi
+last-child ohirgisi
+nth-child(2n+1) toqla
+nth-child(3n+1) har uchtada 1,4,7,10,13...
+nth-child(4n+1) har 4tada 1,5,9,13...
+nth-child(18) 18chi boxni tanlab beradi
+*/
+.box:nth-child(18){
+    background-color: rgb(47, 174, 155);
+    order: -2;
+}
+/* order minusla bowiga joylawadi plusla ohiriga */
+/* свойство order определяет порядок, используемый для размещения flex элементов в их flex контейнере. Элементы располагаются в восходящем порядке по значению order. Элементы с одинаковым значением order располагаются в том порядке, в каком они находятся в исходном коде. */
