@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <!-- main.css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Lesson 6</title>
+</head>
+
+<body>
+    <!-- passwordla uchunam regexsla bor -->
+    <div class="wrapper">
+        <h2>Registration form</h2>
+        <!-- formichida matn yozbomidi -->
+        <div class="line"></div>
+        <form action="http://echo.htmlacademy.ru/" method="post">
+            <label for="f_name">
+                <p>First name</p>
+                <!-- required toldiriw wart bosa  -->
+                <input type="text" required name="first_name" placeholder="Enter first name"
+                    aria-label="Enter first name" id="f_name" maxlength="10" minlength="4">
+                <!-- imkoniyati cheklanganla uchun har bitta inputti oqiberad arialabel(screen rendaring) 
+                min-maxlenght ismlaga keremas, nomerga iwlatse boladi
+                -->
+            </label>
+            <label for="l_name">
+                <p>Last name</p>
+                <input type="text" name="last_name" placeholder="Enter last name" aria-label="Enter last name"
+                    id="l_name">
+            </label>
+
+            <label for="tel">
+                <p>Enter phone number</p>
+                <!-- regex pattern qoyiw kere togri formatda yozwchun -->
+                <input pattern="/
+                ^998([378]{2}|(9[013-57-9]))\d{7}$
+                /" type="tel" name="phone_number" placeholder="Enter phone number" aria-label="Enter phone number"
+                    id="tel" minlength="7" maxlength="12" required>
+            </label>
+
+            <label for="email">
+                <p>Email address</p>
+                <input type="email" name="email" placeholder="Enter email address" aria-label="Enter email address"
+                    id="email">
+            </label>
+
+            <select name="region" id="region">
+                <option value="0" disabled selected>Select region</option>
+                <option value="Toshkent">Toshkent</option>
+                <option value="Buhoro">Buhoro</option>
+                <option value="Andijon">Andijon</option>
+                <option value="Jizzax">Jizzax</option>
+            </select>
+            <input type="file" name="image" id="img">
+
+            <label for="">
+                <p>Enter birthday</p>
+                <input type="date" name="birth" id="birth">
+            </label>
+
+            <label class="gender">
+                <span>Male</span>
+                <input type="radio" required name="gender" id="male" value="male">
+                <span>Female</span>
+                <input type="radio" required name="gender" id="female" value="female">
+                <!-- name br xl bosa bittasini faqat tanlasa boladi -->
+            </label>
+            <label for="password">
+                <p>Enter your password</p>
+                <input type="password" name="password" id="password" aria-label="password" minlength="7" maxlength="12">
+            </label>
+
+            <label for="check" class="confirm">
+                <p>Confirm all access !</p>
+                <input type="checkbox" name="confirm" id="check">
+            </label>
+            <button type="submit">Sign Up</button>
+            <!-- <input type="button" value="Sign Up"> -->
+
+        </form>
+    </div>
+
+
+
+
+
+    <!-- shrift ssilkasini olamiz get embed code  kerelisini tanlimiz, joylawtiramiz, cssda font familyni nomini yozb, font-weight orqali qalinligini tanlimiz -->
+</body>
+
+</html>
+
+
+
+<!-- 5634 -->

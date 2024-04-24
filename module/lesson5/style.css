@@ -139,7 +139,7 @@ h3 {
     /* skew(-10deg, -20deg) bosa -10 deg oldinga elementimiz qulab tuwvotti, -20deg ewi ongdan ochilvotti*/
     /* skew 3d format наклон элемента*/
 
-    transform: skew(50deg, 0) rotate(10deg) translate(100px, 200px) scale(1.5, 1.5);
+    transform: skew(50deg, 0deg) rotate(10deg) translate(100px, 200px) scale(1.5, 1.5);
     /* hammasini bittada iwlatsayam b0ladi */
 
 
