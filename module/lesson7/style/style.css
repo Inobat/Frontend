@@ -1,0 +1,50 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    border: 2px solid black;
+    height: 100vh;
+    /* grid-template-columns: 300px 200px 300px; */
+    /* ustun eni */
+    /* grid-template-columns: repeat(4, 300px); */
+    /* grid-template-columns: repeat(4, 300px 100px); */
+    /* grid-template-columns: repeat(4, 25%); */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 20px 50px 100px 150px; */
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    margin-top: 50px;
+
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    margin: 2px;
+    font-size: 32px;
+    color: white;
+    /* grid cordinatasini aniqlash */
+}
+
+.grid-item:nth-child(1) {
+    background-color: darkseagreen;
+    /* grid-column: 3/4; */
+    /* 3 bn 4 orasi */
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
