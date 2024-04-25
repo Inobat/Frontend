@@ -6,70 +6,82 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.grid-container {
-    display: grid;
-    justify-items: stretch;
-    align-items: stretch;
-    border: 2px solid black;
-    height: 100vh;
-    /* grid-template-columns: 300px 200px 300px; */
-    /* ustun eni */
-    /* grid-template-columns: repeat(4, 300px); */
-    /* grid-template-columns: repeat(4, 300px 100px); */
-    /* grid-template-columns: repeat(4, 25%); */
-
-    /* layout  */
-    /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70px 100vh 70px;
-    /* auto-fit bzaga responsive qberadi */
-    /* auto-fill bu faqat berilgan px boyicha iwlidi
-     auto-fit bu berlgan pxga ortiqcha joy bosa uwanyam qowvoradi hisob kitob qb, to est frakwnga otib ketadi */
-    /* grid-template-rows: 20px 50px 100px 150px; */
-    /* grid-template-rows: repeat(4, 1fr); */
-    gap: 20px;
-    padding: 20px;
-    margin-top: 50px;
-
-    grid-template-areas:
-        "header header header"
-        "aside main main"
-        "footer footer footer"
-    ;
-
+header {
+    width: 100%;
+    background-color: palevioletred;
 }
 
-.grid-item {
+.nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 70px;
     align-items: center;
-    background-color: pink;
-    font-size: 32px;
+}
+
+.nav .nav__brand {
+    text-decoration: none;
     color: white;
-    /* grid cordinatasini aniqlash */
+    font-size: 23px;
 }
 
-.grid-item:nth-child(1) {
-    grid-area: header;
-    background-color: darkseagreen;
+.nav .nav__list {
+    list-style-type: none;
+    display: flex;
+    column-gap: 5rem;
+    /* transform: translateY(80px); */
 }
 
-.grid-item:nth-child(2) {
-    grid-area: aside;
+.nav .nav__list .nav__list--item {
+    text-transform: uppercase;
+    padding: 26px 0;
 }
 
-.grid-item:nth-child(3) {
-    grid-area: main;
-    background-color: lightblue;
+.nav .nav__list .nav__list--item .nav__list--item-link {
+    text-decoration: none;
+    color: white;
 }
 
-.grid-item:nth-child(4) {
-    grid-area: footer;
-    background-color: wheat;
+.nav .nav__list .nav__list--item .nav__list--item-link:hover {
+    color: rgb(250, 207, 215);
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu {
+    background-color: pink;
+    width: 150px;
+    transform: translate(-30px, 29px);
+    box-shadow: 0 0 10px palevioletred;
+    position: absolute;
+    display: none;
+}
+
+.dropdown_menu li {
+    padding: 10px;
+    list-style-type: none;
+    border-top: 1px solid palevioletred;
+}
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown_menu li:hover {
+    background-color: palevioletred;
+}
+
+.dropdown_menu li:hover a {
+    color: rgb(250, 207, 215);
 }
