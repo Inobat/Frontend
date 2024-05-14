@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+
+
+    padding: 200px 600px;
+    height: 100vh;
+
+}
+
+.center-box {
+    position: relative;
+}
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    position: absolute;
+    opacity: 0.8;
+}
+
+.box h2 {
+    transform: rotate(-45deg);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.box:nth-child(1) {
+    background-color: rgb(207, 37, 147);
+    z-index: 1;
+    top: 17px;
+    left: -230px;
+}
+
+.box:nth-child(2) {
+    background-color: green;
+    z-index: 6;
+    top: -50px;
+
+
+}
+
+.box:nth-child(3) {
+    background-color: aqua;
+    z-index: 7;
+}
+
+.box:nth-child(4) {
+    background-color: rgb(222, 106, 74);
+    z-index: 2;
+    top: 100px;
+    left: 290px;
+
+}
+
+.box:nth-child(5) {
+    background-color: orange;
+    z-index: 2;
+    top: 270px;
+    left: 20px;
+
+}
+
+.box:nth-child(6) {
+    background-color: rgb(14, 93, 111);
+    z-index: 3;
+    top: 140px;
+    left: 100px;
+}
+
+.box:nth-child(7) {
+    background-color: darkgreen;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+    top: 200px;
+    left: -50px;
+}
