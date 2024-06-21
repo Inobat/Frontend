@@ -1,0 +1,141 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Segoe bold";
+    src: url(../assets/fonts/segoe-ui/Segoe\ UI\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Segoe regular";
+    src: url(../assets/fonts/segoe-ui/Segoe\ UI.ttf);
+}
+
+body {
+    font-family: "Segoe bold";
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header start */
+
+header {
+    width: 100%;
+    /* box-shadow: 0 1px black; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+}
+
+.nav .nav__logo {
+    font-size: 48px;
+    color: #4579CB;
+}
+
+.nav .nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    list-style-type: none;
+}
+
+.nav .nav__list .nav__list--item {
+    font-size: 16px;
+}
+
+.nav .nav__list .nav__list--item .nav__list--item-link {
+    color: #666666;
+}
+
+.nav .nav__list .nav__list--item .btn {
+    width: 170px;
+    height: 50px;
+    background-color: #4579CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* header end */
+
+/* main start */
+
+#intro {
+    min-height: 771px;
+    width: 100%;
+    background-image: url(../assets/images/Union.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+#intro .wrapper {
+    max-width: 1046px;
+    text-align: center;
+    margin: 120px auto;
+}
+
+#intro .wrapper .intro__title {
+    font-size: 56px;
+    color: #474747;
+    line-height: 78px;
+    letter-spacing: 0.02em;
+    /* letter-spacing vajniy rol oynidi, wuni uchitovat qlw kere */
+}
+
+#intro .wrapper .intro__title span {
+    color: #4579CB;
+}
+
+#intro .wrapper .intro__text {
+    color: #666666;
+    font-weight: 400 !important;
+    line-height: 24px;
+    font-size: 16px;
+    max-width: 828px;
+    margin: 38px auto 38px auto;
+}
+
+#intro .wrapper .intro__btn {
+    width: 170px;
+    height: 50px;
+    background-color: #4579CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    display: block;
+    margin: 38px auto 21px;
+    border: none;
+}
+
+#intro .wrapper a span {
+    color: #666666;
+    position: relative;
+    top: -4px;
+    font-family: "Segoe regular";
+    text-decoration: underline;
+    left: 7px;
+}
