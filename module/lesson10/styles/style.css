@@ -79,7 +79,8 @@ header {
 
 /* header end */
 
-/* main start */
+
+/* intro section start */
 
 #intro {
     min-height: 771px;
@@ -138,4 +139,42 @@ header {
     font-family: "Segoe regular";
     text-decoration: underline;
     left: 7px;
+}
+
+/* intro section end */
+
+/* service section start */
+#service {
+    min-height: 265px;
+    width: 100%;
+    text-align: center;
+}
+
+#service .service__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #666666;
+}
+
+#service .service__text {
+    font-family: "Segoe regular";
+    margin: 0 auto 46px;
+    max-width: 875px;
+    color: #666666;
+}
+
+#service .slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#service .dot span {
+    width: 20px;
+    height: 20px;
+    /* w20+h20 */
+    border: 1px solid #4579CB;
+    display: inline-block;
+    border-radius: 50%;
+
 }

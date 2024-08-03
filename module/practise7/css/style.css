@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    margin: 200px auto;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+}
+
+.shadow {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-align: center;
+    line-height: 120px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.item img {
+    transform: translateY(-120px);
+    position: absolute;
+    z-index: 1;
+}
+
+.shadow .happy,
+.sad {
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shadow .happy {
+    opacity: 1;
+}
+
+.shadow .sad {
+    opacity: 0;
+}
+
+.shadow:hover .happy {
+    opacity: 0;
+}
+
+.shadow:hover .sad {
+    opacity: 1;
+}
