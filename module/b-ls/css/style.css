@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.news {
+    overflow: hidden;
+}
+
+.news>img {
+    transform: scale(1, 1);
+    transition: 0.3s;
+}
+
+.info {
+    bottom: -150px;
+    transition: 0.3s;
+}
+
+.news:hover>.info {
+    bottom: 20px;
+}
+
+.news:hover>img {
+    transform: scale(1.5, 1.5);
+}
